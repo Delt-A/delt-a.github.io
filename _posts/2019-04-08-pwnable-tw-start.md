@@ -19,6 +19,9 @@ It depends on the number before to make a move. E.g: the number before first ins
 
 The program lets you type 60 bytes, but it only accepts 20 bytes. Therefore, you can see maybe has buffer overflow here.
 
+First payload I use buffer overflow to make it returns to ......
+
+And then It will print out esp address in stack. Having address, I can put the shellcode into that.
 
 Source code for pwn:
 {% highlight python linenos %}
