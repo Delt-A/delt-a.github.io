@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 'root-me-App-Script: sudo — weak configuration'
+title: root-me-App-Script
 date: '2018-07-25'
 subtitle: 'App-Script: sudo — weak configuration'
 ---
@@ -12,8 +12,8 @@ Khi truy cập ssh vào thì ta kiểm tra tại thư mục đó có gì:
 
 Okay, bây giờ ta kiểm tra file readme.md trước:
 
-![](https://cdn-images-1.medium.com/max/800/1*zCs-v3krrSbg33IYSm3cgg.png)
-	Nó cho ta biết được cần phải tìm flag ở đâu.
+![](https://cdn-images-1.medium.com/max/800/1*zCs-v3krrSbg33IYSm3cgg.png)  
+Nó cho ta biết được cần phải tìm flag ở đâu.
 
 Truy cập vào /ch1cracked để kiểm tra thử xem sao. Bài này liên quan tới sudo nên ta check sudo -l: (Aliase -tạm dịch là “ bí danh”)
 
