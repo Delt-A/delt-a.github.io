@@ -1,5 +1,9 @@
 ---
 layout: post
-title: "Pwnable.tw challenge: start"
+title: 'Pwnable.tw: Start'
+published: true
 ---
-Something to writeout ahihihi.
+##
+First, we check file info: ![Capture.JPG]({{site.baseurl}}/img/ctf/pwnable.tw/start-1.JPG)
+
+
