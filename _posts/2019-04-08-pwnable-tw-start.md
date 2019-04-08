@@ -14,7 +14,7 @@ It's a .elf file. Now we should open disassembler like IDA Pro.
 
 As you can see, it firsts push esp, and push address `\_exit` fuction, then push 5 times hex numbers. If you look closer by convert it to string, that's the string "Let's start the CTF:" at the beginning of the program. 
 
-int 80 is a system call in Linux, you can read it more at [here]: (http://asm.sourceforge.net/syscall.html).
+int 80 is a system call in Linux, you can read it more at [here](http://asm.sourceforge.net/syscall.html).
 
 
 Source code for pwn:
