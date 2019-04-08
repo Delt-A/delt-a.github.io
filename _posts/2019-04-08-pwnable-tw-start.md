@@ -14,8 +14,8 @@ It's a .elf file. Now we should open disassembler like IDA Pro.
 
 As you can see, it firsts push esp, and push address `_exit` fuction, then push 5 times hex numbers. If you look closer by convert it to string, that's the string "Let's start the CTF:" at the beginning of the program. 
 
-`int 80` is a system call in Linux, you can read it more at [here](http://asm.sourceforge.net/syscall.html).
-It depends on the number before to make a move. E.g: the number before first instruction `int 80` at `0804808F` is 4, it means [sys_write](http://asm.sourceforge.net/syscall.html#4); the number before the second is 3, it is [sys_read](http://asm.sourceforge.net/syscall.html#3).
+*`int 80` is a system call in Linux, you can read it more at [here](http://asm.sourceforge.net/syscall.html).
+It depends on the number before to make a move. E.g: the number before first instruction `int 80` at `0804808F` is 4, it means [sys_write](http://asm.sourceforge.net/syscall.html#4); the number before the second is 3, it is [sys_read](http://asm.sourceforge.net/syscall.html#3).*
 
 Source code for pwn:
 {% highlight python linenos %}
