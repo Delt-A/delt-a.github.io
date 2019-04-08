@@ -36,7 +36,7 @@ from pwn import *
 {% endhighlight %}
 
 
-{% highlight intel-assembly linenos %}
+{% highlight intel assembly linenos %}
 .text:08048060 push    esp
 .text:08048061 push    offset _exit
 .text:08048066 xor     eax, eax                        ; Logical Exclusive OR
