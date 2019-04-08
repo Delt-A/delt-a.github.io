@@ -11,7 +11,8 @@ First, we check file info:
 It's a .elf file. Now we should open disassembler like IDA Pro.
 ![assembly.PNG]({{site.baseurl}}/img/ctf/pwnable.tw/assembly.PNG)
 
-  `from pwn import *
+{% highlight python linenos %}
+from pwn import *
 
   conn = remote("chall.pwnable.tw", 10000)
   conn.recv(20)
@@ -31,5 +32,5 @@ It's a .elf file. Now we should open disassembler like IDA Pro.
 
 
   conn.interactive()
-  conn.close()`
-
+  conn.close()
+{% endhighlight %}
