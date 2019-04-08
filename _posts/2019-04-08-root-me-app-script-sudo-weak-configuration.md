@@ -24,9 +24,9 @@ Khi được yêu cầu nhập mật khẩu, ta nhập mật khẩu của user, 
 ![](https://cdn-images-1.medium.com/max/1200/1*yexziu4liV2SdwKN7wi00Q.png)
 Từ kết quả, user app-script-ch1 có thể dùng những câu lệnh trên challenge02:
 
-(app-script-ch1-cracked) /bin/cat /challenge/app-script/ch1/ch1/*
+>(app-script-ch1-cracked) /bin/cat /challenge/app-script/ch1/ch1/*
 
-Theo mình hiểu được thì có thể chạy dưới “bí danh” app-script-ch1-cracked, thực hiện lệnh cat đối với đường dẫn /challenge/app-script/ch1/ch1/* (* nghĩa là tất cả trường hợp)
+Theo mình hiểu được thì có thể chạy dưới “bí danh” app-script-ch1-cracked, thực hiện lệnh cat đối với đường dẫn **/challenge/app-script/ch1/ch1/*** (* nghĩa là tất cả trường hợp)
 
 ![sudo -u](https://cdn-images-1.medium.com/max/800/1*Xd3sXqssH6fQyiB_dhvyaw.png)
 
