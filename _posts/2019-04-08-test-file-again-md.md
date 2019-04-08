@@ -1,12 +1,7 @@
 ---
 layout: post
-published: false
+published: true
 title: 2019-04-08-Test-file-again.md
 ---
----
-layout: post
-title: "Testing for write on Prose.io"
----
-
 
 abcdefghijklmnopqrstuvwxyz.
