@@ -41,3 +41,6 @@ from pwn import *
   conn.interactive()
   conn.close()
 {% endhighlight %}
+
+{: .box-note}
+**Note:** "aaaaaaaaaaaaaaaaaaaa\x87\x80\x04\x08"
