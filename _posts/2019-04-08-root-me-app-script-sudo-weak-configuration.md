@@ -5,7 +5,7 @@ title: root-me-App-Script
 date: '2018-07-25'
 subtitle: 'App-Script: sudo — weak configuration'
 ---
-Đây là self-note để ghi nhớ sau này mình có chỗ còn coi lại. Phần này thuộc challenge của root-me.org
+Đây là self-note để ghi nhớ sau này mình có chỗ còn coi lại. Phần này thuộc challenge của root-me.org.
 
 Khi truy cập ssh vào thì ta kiểm tra tại thư mục đó có gì:
 ![](https://cdn-images-1.medium.com/max/800/1*Kml88Ux85BzDq6E-b1FHYQ.png)
@@ -15,7 +15,7 @@ Okay, bây giờ ta kiểm tra file readme.md trước:
 ![](https://cdn-images-1.medium.com/max/800/1*zCs-v3krrSbg33IYSm3cgg.png)  
 Nó cho ta biết được cần phải tìm flag ở đâu.
 
-Truy cập vào /ch1cracked để kiểm tra thử xem sao. Bài này liên quan tới sudo nên ta check sudo -l: (Aliase -tạm dịch là “ bí danh”)
+Truy cập vào /ch1cracked để kiểm tra thử xem sao. Bài này liên quan tới sudo nên ta check sudo -l: (Aliase -tạm dịch là “bí danh”)
 
 ![](https://cdn-images-1.medium.com/max/800/1*mibZwY9RqhCxAKfLwuQ_HA.png)
 				*sudo -l (trong tài liệu của root-me cung cấp)*
