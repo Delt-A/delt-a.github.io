@@ -35,7 +35,7 @@ When comes the `retn;` instruction, ESP is pointing to address has 0x08048087, s
 {: .box-note}
 **Note:** Payload 2: 'A' * 20 + p32(esp_add + 20) + shellcode
 
-If you are wondering why in payload (maybe only me, so sad) `esp_add + 20`, it's because .
+If you are wondering why in payload (maybe only me, so sad) `esp_add + 20`, it's because that where shellcode is. Why is 20? `add esp 14h`.
 
 Source code for pwn:
 {% highlight python linenos %}
