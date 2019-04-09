@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[Unfinished]Pwnable.tw: Start'
+title: 'Pwnable.tw: Start'
 published: true
 ---
 First, we check file info: 
@@ -20,9 +20,13 @@ It depends on the number before to make a move. E.g: the number before first ins
 The program lets you type 60 bytes, but it only accepts 20 bytes. Therefore, you can see maybe it has buffer overflow here.
 
 First payload I use buffer overflow to make it returns to ROP gadget (0x08048087).
+
 {: .box-note}
 **Note:** Payload 1: "aaaaaaaaaaaaaaaaaaaa\x87\x80\x04\x08"
+
 And then it will print out esp address in stack. Having that address, I can put the shellcode into that.
+When comes the `retn;` instruction, ESP is pointing to address has 0x08048087, so next EIP is 0x08048087.
+
 
 
 \[About shellcode] You can find shellcode at [here](http://shell-storm.org/shellcode/).
