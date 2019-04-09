@@ -22,7 +22,7 @@ The program lets you type 60 bytes, but it only accepts 20 bytes. Therefore, you
 First payload I use buffer overflow to make it returns to ......
 
 And then It will print out esp address in stack. Having address, I can put the shellcode into that.
-
+\[Méo biết tại sao lại cộng 20 nữa, làm bài khác rồi quay lại vậy]
 Source code for pwn:
 {% highlight python linenos %}
 from pwn import *
