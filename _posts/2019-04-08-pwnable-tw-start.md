@@ -3,6 +3,13 @@ layout: post
 title: 'Pwnable.tw: Start'
 published: true
 ---
+>Start \[100 pts]
+Just a start.
+>
+>nc chall.pwnable.tw 10000
+
+
+
 First, we check file info: 
 
 ![Capture.PNG]({{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG)
@@ -37,7 +44,7 @@ When comes the `retn;` instruction, ESP is pointing to address has 0x08048087, s
 
 If you are wondering why in payload (maybe only me, so sad) `esp_add + 20`, it's because that where shellcode is. Why is 20? The program will do this instruction: `add esp 14h`.
 
-Source code for pwn:
+Source code for pwn: Run it with python.
 {% highlight python linenos %}
 from pwn import *
 
