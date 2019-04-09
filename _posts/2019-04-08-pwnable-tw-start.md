@@ -9,8 +9,6 @@ Just a start.
 >
 >nc chall.pwnable.tw 10000
 
-
-
 First, we check file info: 
 
 ![Capture.PNG]({{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG)
