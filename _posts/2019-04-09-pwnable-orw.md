@@ -1,6 +1,5 @@
 ---
 layout: post
-published: false
 title: 'Pwnable: orw'
 subtitle: A challenge about writing your own shellcode.
 ---
