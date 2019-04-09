@@ -35,10 +35,7 @@ First payload I use buffer overflow to make it returns to ROP gadget (0x08048087
 And then it will print out esp address in stack. Having that address, I can put the shellcode into that.
 When comes the `retn;` instruction, ESP is pointing to address has 0x08048087, so next EIP is 0x08048087.
 
-
-
 \[About shellcode] You can find shellcode at [here](http://shell-storm.org/shellcode/). For me, I use [this](http://shell-storm.org/shellcode/files/shellcode-752.php).
-
 
 {: .box-note}
 **Note:** Payload 2: 'A' * 20 + p32(esp_add + 20) + shellcode
