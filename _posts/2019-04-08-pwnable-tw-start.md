@@ -8,7 +8,7 @@ First, we check file info:
 ![Capture.PNG]({{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG)
 
 
-It's a .elf file. Now we should open disassembler like IDA Pro.
+It's a .elf file (I only use it for open IDA correctly). Now we should open disassembler like IDA Pro.
 ![assembly.PNG]({{site.baseurl}}/img/ctf/pwnable.tw/assembly.PNG)
 
 We have two funcion: `_start` and `_exit`.
