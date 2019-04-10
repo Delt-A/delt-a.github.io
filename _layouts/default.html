@@ -1,9 +1,14 @@
 ---
 layout: base
 ---
+<html>
+  <head>
+    {% include head.html %}
+    {% seo %}
+  </head>
+  <div class="intro-header"></div>
 
-<div class="intro-header"></div>
-
-<div role="main" class="container">
-  {{ content }}
-</div>
+  <div role="main" class="container">
+    {{ content }}
+  </div>
+</html>
