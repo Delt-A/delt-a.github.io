@@ -107,7 +107,10 @@ share-links-active:
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: "<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137982391-1"></script>
+gtag: "UA-137982391-1" 
+
+  #gtag('config', 'UA-137982391-1');
+
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-137982391-1"
