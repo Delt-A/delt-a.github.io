@@ -3,6 +3,7 @@ layout: post
 published: true
 title: 'Pwnable.kr: collision'
 subtitle: 'collision - 3 pt [writeup]'
+image: '{{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG'
 ---
 >Daddy told me about cool MD5 hash collision today.
 I wanna do something like that too!
