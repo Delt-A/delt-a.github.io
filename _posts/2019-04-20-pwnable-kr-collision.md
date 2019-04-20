@@ -6,10 +6,10 @@ subtitle: 'collision - 3 pt [writeup]'
 ---
 >Daddy told me about cool MD5 hash collision today.
 I wanna do something like that too!
-
 >ssh col@pwnable.kr -p2222 (pw:guest)
 
-This challenge 
+![Background]({{site.baseurl}}/img/ctf/Pwnable.kr/Pwnable.kr.PNG)
+
 
 {% highlight c lineos %}
 #include <stdio.h>
