@@ -207,7 +207,7 @@ exclude:
 # prose.io config
 prose:
   rooturl: '_posts'
-  media: 'img'
+  media: 'img/ctf/Pwnable.kr'
   ignore:
     - 404.html
     - LICENSE
