@@ -8,7 +8,7 @@ subtitle: 'collision - 3 pt [writeup]'
 I wanna do something like that too!
 >ssh col@pwnable.kr -p2222 (pw:guest)
 
-		![Background]({{site.baseurl}}/img/ctf/Pwnable.kr/Pwnable.kr.PNG)
+![Background]({{site.baseurl}}/img/ctf/Pwnable.kr/Pwnable.kr.PNG)
 
 
 {% highlight c lineos %}
