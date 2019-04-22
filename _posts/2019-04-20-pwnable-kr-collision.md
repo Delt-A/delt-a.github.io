@@ -21,7 +21,7 @@ unsigned long check_password(const char* p){
 	int i;
 	int res=0;
 	for(i=0; i<5; i++){           //lặp 5 lần
-		res += ip[i];   //res sẽ là địa chỉ 0x21DD09EC nhưng là tổng của 5 lần cộng
+		res += ip[i];   //res have equal to 0x21DD09EC, but sum of 5 times adding.
 	}
 	return res;
 }
