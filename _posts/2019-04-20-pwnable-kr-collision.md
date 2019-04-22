@@ -3,11 +3,12 @@ layout: post
 published: true
 title: 'Pwnable.kr: collision'
 subtitle: 'collision - 3 pt [writeup]'
-image: '{{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG'
 ---
 >Daddy told me about cool MD5 hash collision today.
 I wanna do something like that too!
 >ssh col@pwnable.kr -p2222 (pw:guest)
+
+![Pwnable.kr.PNG]({{site.baseurl}}/img/ctf/Pwnable.kr/Pwnable.kr.PNG)
 
 Through times and times debugging, we will find that check_password() function is a hash algorithm. 
 
