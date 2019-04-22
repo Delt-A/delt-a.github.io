@@ -11,7 +11,7 @@ I wanna do something like that too!
 
 Through times and times debugging, we will find that check_password() function is a hash algorithm. 
 
-{% highlight c lineos %}
+{% highlight c linenos %}
 #include <stdio.h>
 #include <string.h>
 unsigned long hashcode = 0x21DD09EC;
