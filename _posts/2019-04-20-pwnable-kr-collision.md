@@ -9,8 +9,7 @@ image: '{{site.baseurl}}/img/ctf/pwnable.tw/Capture.PNG'
 I wanna do something like that too!
 >ssh col@pwnable.kr -p2222 (pw:guest)
 
-![Background]({{site.baseurl}}/img/ctf/Pwnable.kr/Pwnable.kr.PNG)
-
+Through times and times debugging, we will find that check_password() function is a hash algorithm. 
 
 {% highlight c lineos %}
 #include <stdio.h>
