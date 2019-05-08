@@ -6,7 +6,7 @@ title: 'App-Script: Bash — System 1'
 Mình nghĩ challenge này không cần viết nhưng mà nhận ra nếu không viết ra thì rất dễ quên.
 
 Kiểm tra tại thư mục:
-![]({{site.baseurl}}/https://cdn-images-1.medium.com/max/800/1*o5nwjd2WcJqUVj68SBqgig.png)
+![](https://cdn-images-1.medium.com/max/800/1*o5nwjd2WcJqUVj68SBqgig.png)
 
 Đây là code của ch11. Nó sẽ chạy lệnh ls /challenge/app-script/ch11/.passwd
 
@@ -22,7 +22,7 @@ Kiểm tra thì chỉ có /tmp là tạo được file và thực thi. Vậy th�
 
 Câu lệnh tạo symlink: ln -s filename linkname
 
-Add directory vào $PATH có thể bằng cách sau:
+Add directory vào **$PATH** có thể bằng cách sau:
 **PATH=/tmp/abc:$PATH
 
 Với /tmp/abc là địa chỉ của thư mục muốn add vào. Ở trên ta có ví dụ là /tmp/delta
