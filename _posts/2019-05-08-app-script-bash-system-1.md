@@ -21,3 +21,13 @@ Flag nằm ở /challenge/app-script/ch11/.passwd nhưng ta không có quyền t
 Kiểm tra thì chỉ có /tmp là tạo được file và thực thi. Vậy thì tạo symlink ở đó thôi ;)
 
 Câu lệnh tạo symlink: ln -s filename linkname
+
+Add directory vào $PATH có thể bằng cách sau:
+**PATH=/tmp/abc:$PATH
+
+Với /tmp/abc là địa chỉ của thư mục muốn add vào. Ở trên ta có ví dụ là /tmp/delta
+Kiểm tra thì ta đã thành công.
+
+(Nếu bạn không hiểu add vào enviroment variable **$PATH** làm gì thì đừng lo. Ngay bây giờ mình sẽ giải thích. Khi mà bạn truyền vào tên 1 chương trình trên terminal thì terminal sẽ tự động chạy chương trình đó lên, bạn không cần quan tâm chương trình đó ở đâu để chạy đúng không nào? :D
+
+Ví dụ khi bạn gõ python trong terminal thì nó sẽ tự động chạy ngay python ở terminal luôn. Đó là vì nó sẽ kiểm tra tuần tự từ trái sang phải các địa chỉ thư mục nằm trong biến **$PATH**, khi tìm được ở chương trình nào đó đầu tiên thì nó sẽ tự động chạy ngay lên thôi. Lúc bạn add /tmp/abc vào **$PATH** khi chạy lệnh ls nó sẽ tìm ở đây trước, khi đó ta có symlink tên là ls liên kết tới /bin/cat và chạy chương trình cat, và …bùm, flag xuất hiện.)
