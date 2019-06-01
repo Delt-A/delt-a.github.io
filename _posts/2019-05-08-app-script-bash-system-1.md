@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: 'App-Script: Bash — System 1'
+date: '2018-07-25'
 ---
 Mình nghĩ challenge này không cần viết nhưng mà nhận ra nếu không viết ra thì rất dễ quên.
 
