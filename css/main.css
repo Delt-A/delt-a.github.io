@@ -6,13 +6,6 @@ layout: null
 
 /* --- General --- */
 
-[pd-right-10]{
-  padding-right:10px!important;
-}
-
-[pd-left-10]{
-  padding-left:10px!important;
-}
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
@@ -220,8 +213,10 @@ img {
 }
 
 .container-fluid  {
-  padding-left: max(15px, env(safe-area-inset-left));
-  padding-right: max(15px, env(safe-area-inset-right));
+/*   padding-left: max(15px, env(safe-area-inset-left)); */
+/*   padding-right: max(15px, env(safe-area-inset-right)); */
+  padding-right:10px;
+  padding-left:10px;
 }
 
 /* Multi-level navigation links */
