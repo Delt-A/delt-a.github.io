@@ -23,9 +23,10 @@ description: Pwned
 
 # List of links in the navigation bar
 navbar-links:
+  Categories: "categories.html"
+    #- CTF: "https://delt-a.github.io/categories/ctf"
   About Me: "aboutme"
-  Categories:
-    - CTF: "https://delt-a.github.io/categories/ctf"
+  
   #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
