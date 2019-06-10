@@ -37,8 +37,9 @@
 		  
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-	<!-- Testing show categories-->
-		
+		  {% endif %}
+	
+		<!-- Testing show categories-->
 		  <div class="post-categories">
   			{% if post %}
     				{% assign categories = post.categories %}
@@ -49,8 +50,7 @@
   				<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   				{% unless forloop.last %}&nbsp;{% endunless %}
   			{% endfor %}
-		   </div>	
-		  {% endif %}
+		   </div>
         </div>
       </div>
     </div>
