@@ -26,7 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Posts:
     - CTF: "https://delt-a.github.io/ctf"
-  Resources:
+  #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
     #- GitHub Pages: "https://pages.github.com/"
@@ -78,7 +78,7 @@ social-network-links:
   email: "tannn.uit@gmail.com"
   facebook: n.tan97
   github: delt-a
-  twitter: 
+  twitter: Delt4_Tan
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
@@ -164,7 +164,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Vietnam"
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
