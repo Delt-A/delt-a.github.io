@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Pwnable.tw: Start'
+categories: [CTF, Pwnable.tw]
 published: true
 subtitle: It’s the first step that counts
 ---
