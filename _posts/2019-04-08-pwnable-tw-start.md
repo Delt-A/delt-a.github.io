@@ -6,6 +6,8 @@ categories:
   - Pwnable.tw
 published: true
 subtitle: It’s the first step that counts
+tags:
+  - CTF - Pwnable.tw
 ---
 >Start \[100 pts]  
 Just a start.
