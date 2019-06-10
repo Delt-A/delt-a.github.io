@@ -23,7 +23,7 @@ description: Pwned
 
 # List of links in the navigation bar
 navbar-links:
-  Categories: "categories.html"
+  Categories: "categories"
     #- CTF: "https://delt-a.github.io/categories/ctf"
   About Me: "aboutme"
   
