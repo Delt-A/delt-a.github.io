@@ -24,7 +24,7 @@ description: Pwned
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Posts: "categories.html"
+  Categories: "categories.html"
     - CTF: "https://delt-a.github.io/categories/ctf"
   #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
