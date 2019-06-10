@@ -6,6 +6,14 @@ layout: null
 
 /* --- General --- */
 
+[pd-right-10]{
+  padding-right:10px!important;
+}
+
+[pd-left-10]{
+  padding-left:10px!important;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
