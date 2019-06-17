@@ -78,3 +78,5 @@ rm.close()
 {% endhighlight %}
 
 ![combo-chain-lite-exploit.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-exploit.png)
+
+Done.
