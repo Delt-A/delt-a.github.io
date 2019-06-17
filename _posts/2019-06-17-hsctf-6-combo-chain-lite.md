@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: 'HSCTF 6: Combo Chain Lite'
+Categories:
+  - CTF - HSCTF
 ---
 Xin chào.
 Hôm nay mình muốn viết lại challenge này.
