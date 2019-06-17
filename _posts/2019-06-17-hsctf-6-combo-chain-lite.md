@@ -19,8 +19,9 @@ Khi đã có được địa chỉ của ROP, tiếp theo ta cần tìm cách đ
 </p>
   
 Nếu để ý thì trong chương trình đã có sẵn chuỗi đó, việc cần làm là tìm địa chỉ của nó trong chương trình mà thôi.
-Có thể dùng gef hoặc gdb-peda:
 
+Có thể dùng gef hoặc gdb-peda.
+-**Đối với gef:**
 {% highlight bash linenos %}
 $ gdb ./combo-chain-lite
 gef➤  r
@@ -29,6 +30,20 @@ gef➤  grep /bin/sh
 [+] Searching '/bin/sh' in memory
 [+] In '/home/node/tmp/combo-chain-lite'(0x402000-0x403000), permission=r--
   0x402051 - 0x402058  →   "/bin/sh"
+{% endhighlight %}
+
+-**Đối với gdb-peda:**
+{% highlight bash linenos %}
+$ gdb ./combo-chain-lite
+gdb-peda$ b*0x0000000000401209  #đặt breakpoint ở đoạn instruction sau khi in chuỗi
+gdb-peda$ r
+...
+gdb-peda$ find "/bin/sh"
+Searching for '/bin/sh' in: None ranges
+Found 3 results, display max 3 items:
+combo-chain-lite : 0x402051 --> 0x68732f6e69622f ('/bin/sh')
+combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
+            libc : 0x7ffff7f67e80 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
 
 <p align="center">
