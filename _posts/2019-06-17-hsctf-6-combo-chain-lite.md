@@ -14,7 +14,10 @@ Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploita
 
 {: .box-note}
 ROPgadget --binary ./combo-chain-lite | grep "pop rdi"
-Khi đã có được địa chỉ của ROP, tiếp theo ta cần tìm cách đưa chuỗi "/bin/sh" vào như đối số của `system`. ![Thực thi chương trình]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)![exec-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)
+Khi đã có được địa chỉ của ROP, tiếp theo ta cần tìm cách đưa chuỗi "/bin/sh" vào như đối số của `system`. !<p align="center">
+  ![exec-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)
+</p>
+  
 Nếu để ý thì trong chương trình đã có sẵn chuỗi đó, việc cần làm là tìm địa chỉ của nó trong chương trình mà thôi.
 Có thể dùng gef hoặc gdb-peda:
 
@@ -28,9 +31,9 @@ gef➤  grep /bin/sh
   0x402051 - 0x402058  →   "/bin/sh"
 {% endhighlight %}
 
-
+<p align="center">
 ![combo-chain-lite-stack.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-stack.png)
-
+</p>
 Đoạn code exploit của mình:
 
 {% highlight python linenos %}
