@@ -17,6 +17,7 @@ Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploita
 
 {: .box-note}
 ROPgadget --binary ./combo-chain-lite | grep "pop rdi"
+
 Khi đã có được địa chỉ của ROP, ta sẽ cần tìm địa chỉ của hàm `system` khi được nạp vào chương trình khi được thực thi. Tuy nhiên ở đây chương trình đã cung cấp sẵn cho ta.
 
 ![exec-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)
@@ -77,4 +78,3 @@ rm.sendline(payload)
 rm.interactive()
 rm.close()
 {% endhighlight %}
-
