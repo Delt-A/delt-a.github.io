@@ -16,7 +16,7 @@ Chall sử dụng ROP (Return Oriented Programming). Nên trước tiên ta tìm
 Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploitation/what-are-calling-conventions/)), các đối số được truyền vào các registers trong các chương trình 64-bit theo thứ tự như link tham khảo. Trong trường hợp của gọi `system`, thì chúng ta cần phải điều khiển thanh ghi RDI. Mình sẽ tìm các ROPgadget liên quan tới `pop rdi`. 
 
 {: .box-note}
-ROPgadget --binary ./combo-chain-lite | grep "pop rdi"
+ROPgadget --binary ./combo-chain-lite \| grep "pop rdi"
 
 Khi đã có được địa chỉ của ROP, ta sẽ cần tìm địa chỉ của hàm `system` khi được nạp vào chương trình khi được thực thi. Tuy nhiên ở đây chương trình đã cung cấp sẵn cho ta.
 
