@@ -53,7 +53,7 @@ combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
 
 
-  ![combo-chain-lite-stack.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-stack.png)
+  
 
 Đoạn code exploit của mình:
 
@@ -76,3 +76,6 @@ rm.sendline(payload)
 rm.interactive()
 rm.close()
 {% endhighlight %}
+
+![combo-chain-lite-exploit.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-exploit.png)
+
