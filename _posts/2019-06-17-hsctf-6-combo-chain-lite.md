@@ -14,7 +14,8 @@ Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploita
 
 {: .box-note}
 ROPgadget --binary ./combo-chain-lite | grep "pop rdi"
-Khi đã có được địa chỉ của ROP, tiếp theo ta cần tìm cách đưa chuỗi "/bin/sh" vào như đối số của `system`. !<p align="center">
+Khi đã có được địa chỉ của ROP, tiếp theo ta cần tìm cách đưa chuỗi "/bin/sh" vào như đối số của `system`.
+<p align="center">
   ![exec-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)
 </p>
   
