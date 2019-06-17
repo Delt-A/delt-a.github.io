@@ -2,8 +2,6 @@
 layout: post
 published: true
 title: 'HSCTF 6: Combo Chain Lite'
-Categories:
-  - CTF - HSCTF
 categories:
   - CTF
   - HSCTF
