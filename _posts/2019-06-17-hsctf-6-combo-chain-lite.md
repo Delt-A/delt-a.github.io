@@ -6,7 +6,7 @@ categories:
   - CTF
   - HSCTF
 ---
-##\[ENGLISH BELOW]
+## \[ENGLISH BELOW]
 
 
 Xin chào.
@@ -85,7 +85,7 @@ rm.close()
 Done.
 
 
-#ENGLISH
+## ENGLISH
 
 Hello everyone, here is the challenge:
 ![Capture-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/Capture-combo-chain-lite.PNG)
