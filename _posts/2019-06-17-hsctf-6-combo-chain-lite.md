@@ -55,9 +55,6 @@ combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
             libc : 0x7ffff7f67e80 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
 
-
-  
-
 Đoạn code exploit của mình:
 
 {% highlight python linenos %}
@@ -129,9 +126,7 @@ combo-chain-lite : 0x402051 --> 0x68732f6e69622f ('/bin/sh')
 combo-chain-lite : 0x403051 --> 0x68732f6e69622f ('/bin/sh')
             libc : 0x7ffff7f67e80 --> 0x68732f6e69622f ('/bin/sh')
 {% endhighlight %}
-​
 
-​
 My exploit code:
 ​
 {% highlight python linenos %}
