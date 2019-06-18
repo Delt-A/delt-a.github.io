@@ -12,8 +12,8 @@ Hôm nay mình muốn viết lại challenge này.
 ![Capture-combo-chain-lite.PNG]({{site.baseurl}}/img/ctf/HSCTF/2019/Capture-combo-chain-lite.PNG)
 
 
-Chall sử dụng ROP (Return Oriented Programming). Nên trước tiên ta tìm địa chỉ chưa ROPgadget phù hợp.
-Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploitation/what-are-calling-conventions/)), các đối số được truyền vào các registers trong các chương trình 64-bit theo thứ tự như link tham khảo. Trong trường hợp của gọi `system`, thì chúng ta cần phải điều khiển thanh ghi RDI. Mình sẽ tìm các ROPgadget liên quan tới `pop rdi`. 
+Chall sử dụng [ROP (Return Oriented Programming)](https://ctf101.org/binary-exploitation/return-oriented-programming/). Nên trước tiên ta tìm địa chỉ chứa ROP gadgets phù hợp.
+Trong quy ước gọi ([calling conventions](https://ctf101.org/binary-exploitation/what-are-calling-conventions/)), các đối số được truyền vào các registers trong các chương trình 64-bit theo thứ tự như link tham khảo. Trong trường hợp của gọi `system`, thì chúng ta cần phải điều khiển thanh ghi RDI. Mình sẽ tìm các ROP gadgets thông qua tool như [rp++](https://github.com/0vercl0k/rp) hoặc [ROPgadget](https://github.com/JonathanSalwan/ROPgadget) liên quan tới `pop rdi`. 
 
 {: .box-note}
 ROPgadget \--binary ./combo-chain-lite \| grep "pop rdi"
